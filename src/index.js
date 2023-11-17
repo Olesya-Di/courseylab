@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import router from "./router";
 import { RouterProvider } from "react-router-dom";
-import "./assets/font/SevenSeasRegular-lgeYD.ttf";
+import "../src/font/SevenSeasRegular-lgeYD.ttf";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
