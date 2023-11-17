@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/courseylab/static/css/main.0a2237f3.css",
-    "main.js": "/courseylab/static/js/main.60bca064.js",
+    "main.js": "/courseylab/static/js/main.e84a4d36.js",
     "static/js/787.785194a0.chunk.js": "/courseylab/static/js/787.785194a0.chunk.js",
     "static/media/fireworks.png": "/courseylab/static/media/fireworks.95f5b42bc63a4c7c9a96.png",
     "static/media/SevenSeasRegular-lgeYD.ttf": "/courseylab/static/media/SevenSeasRegular-lgeYD.4d69962f435192e4a0a1.ttf",
     "static/media/headerImg.png": "/courseylab/static/media/headerImg.eb7c7cb87cfe5dd09699.png",
     "index.html": "/courseylab/index.html",
     "main.0a2237f3.css.map": "/courseylab/static/css/main.0a2237f3.css.map",
-    "main.60bca064.js.map": "/courseylab/static/js/main.60bca064.js.map",
+    "main.e84a4d36.js.map": "/courseylab/static/js/main.e84a4d36.js.map",
     "787.785194a0.chunk.js.map": "/courseylab/static/js/787.785194a0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0a2237f3.css",
-    "static/js/main.60bca064.js"
+    "static/js/main.e84a4d36.js"
   ]
 }
