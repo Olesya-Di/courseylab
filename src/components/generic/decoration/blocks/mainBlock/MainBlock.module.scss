@@ -1,0 +1,13 @@
+.main {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    min-width: 360px;
+    width: 100%;
+  }
+}

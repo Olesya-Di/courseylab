@@ -1,0 +1,12 @@
+.header {
+  background: #ffffff url("../../../src/assets/img/headerImg.png") center
+    center/cover no-repeat;
+  height: 30vh;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: 20vh;
+  }
+}

@@ -1,0 +1,53 @@
+.container {
+  position: relative;
+}
+
+.inputBlock {
+  height: 3rem;
+  position: relative;
+
+  &__input {
+    background: none;
+    border: 3px solid #0bb8b6;
+    border-radius: 8px;
+    color: #0bb8b6;
+    font-size: 20px;
+    height: 100%;
+    left: 0;
+    outline: none;
+    padding: 1.25rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    &:hover {
+      border-color: #a3e4e3;
+    }
+
+    &:focus {
+      border-color: #a3e4e3;
+    }
+  }
+
+  &__label {
+    background-color: #7353d1;
+    color: #0bb8b6;
+    cursor: text;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    left: 1rem;
+    position: absolute;
+    padding: 0 0.5rem;
+    top: 0.8rem;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  }
+}
+
+.inputBlock__input:focus ~ .inputBlock__label,
+.inputBlock__input:not(:placeholder-shown).inputBlock__input:not(:focus)
+  ~ .inputBlock__label {
+  font-size: 0.8rem;
+  left: 0.8rem;
+  top: -0.5rem;
+}

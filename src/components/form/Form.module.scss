@@ -1,0 +1,16 @@
+.form {
+  background-color: #7353d1;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-width: 328px;
+  padding: 30px;
+  position: relative;
+  width: 60%;
+}
+
+.btnsBlock {
+  display: flex;
+  gap: 20px;
+}

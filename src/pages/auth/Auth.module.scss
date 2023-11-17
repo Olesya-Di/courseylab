@@ -1,0 +1,28 @@
+.blockBackground {
+  background: url("../../../src/assets/img/fireworks.png") center center/cover
+    no-repeat local;
+  background-size: cover;
+  background-position-y: 50%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .blockBackground {
+    height: 400px;
+
+    &__title {
+      width: 100%;
+    }
+  }
+}

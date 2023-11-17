@@ -1,0 +1,26 @@
+.btn {
+  background-color: #0bb8b6;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "SevenSeasRegular";
+  font-size: 30px;
+  font-weight: 600;
+  height: 50px;
+  letter-spacing: 0.2rem;
+  width: 60%;
+
+  &:hover {
+    background-color: #a3e5e3;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn {
+    font-size: 24px;
+    font-weight: 500;
+    height: 40px;
+    letter-spacing: 0.2rem;
+  }
+}
