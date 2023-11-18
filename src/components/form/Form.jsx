@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import styles from "./Form.module.scss";
 import { BtnPrimary } from "../generic";
 import Input from "./inputs/Input";
+import fetchMock from "fetch-mock";
 
 const Form = ({ setIsValid }) => {
   const {
@@ -19,29 +20,49 @@ const Form = ({ setIsValid }) => {
     },
   });
 
-  const onSubmit = (data) => {
-    fetch("http://httpbin.org/post", {
-      method: "POST",
+  fetchMock.config.overwriteRoutes = true;
+  const onSubmit = async (data) => {
+    fetchMock.post('http://httpbin.org/post', {
+      status: 200,
+      body: data
+    });
+  
+    return await fetch('http://httpbin.org/post', {
+      method: 'POST',
       body: JSON.stringify(data),
       headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => {
-        if (response.ok) {
-          return response.json();
-        }
-        throw new Error("Network response was not ok.");
-      })
-      .then((data) => {
-        console.log(data);
-        reset();
-        setIsValid(true);
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-  };
+        'Content-Type': 'application/json'
+      }
+    }).then(response => {
+      if (response.status === 200) {
+        setIsValid(true); 
+      }
+    });
+  }
+
+  // const onSubmit = (data) => {
+  //   fetch("http://httpbin.org/post", {
+  //     method: "POST",
+  //     body: JSON.stringify(data),
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //   })
+  //     .then((response) => {
+  //       if (response.ok) {
+  //         return response.json();
+  //       }
+  //       throw new Error("Network response was not ok.");
+  //     })
+  //     .then((data) => {
+  //       console.log(data);
+  //       reset();
+  //       setIsValid(true);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error:", error);
+  //     });
+  // };
 
   const handleClearErrors = () => {
     clearErrors();
