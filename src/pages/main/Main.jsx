@@ -7,7 +7,7 @@ const Main = () => {
   const navigate = useNavigate();
 
   const handleLogIn = () => {
-    navigate("/auth");
+    navigate("/courseylab/auth");
   };
 
   return (
